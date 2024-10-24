@@ -1,0 +1,17 @@
+{
+  "name": "slicing-twitter-clone-bwa",
+  "version": "1.0.0",
+  "description": "Twitter Clone",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --watch",
+    "build": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
