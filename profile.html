@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile - Twittr.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="hidden md:block relative">
+        <!-- Sidebar -->
+        <aside
+          class="py-8 w-[230px] shrink-0 min-h-screen space-y-10 sticky top-0"
+        >
+          <!-- Logo -->
+          <a href="/index.html">
+            <img
+              loading="lazy"
+              src="./assets/images/logo.png"
+              alt="logo"
+              class="w-[87px]"
+            />
+          </a>
+
+          <!-- Menu -->
+          <div class="space-y-8 pr-5">
+            <a href="/index.html" class="flex items-center gap-4 cursor-pointer">
+              <img
+                loading="lazy"
+                src="./assets/icons/home-hashtag.svg"
+                alt="home"
+                class="w-7"
+              />
+              <span for="home" class="text-xl">Home</span>
+            </a>
+            <a class="flex items-center gap-4 cursor-pointer">
+              <img
+                loading="lazy"
+                src="./assets/icons/search-normal.svg"
+                alt="search-normal"
+                class="w-7"
+              />
+              <span for="search-normal" class="text-xl font-normal"
+                >Explore</span
+              >
+            </a>
+            <a class="flex items-center gap-4 cursor-pointer">
+              <img
+                loading="lazy"
+                src="./assets/icons/notification.svg"
+                alt="notification"
+                class="w-7"
+              />
+              <span for="notification" class="text-xl font-normal"
+                >Notifications</span
+              >
+            </a>
+            <a class="flex items-center gap-4 cursor-pointer">
+              <img
+                loading="lazy"
+                src="./assets/icons/sms.svg"
+                alt="sms"
+                class="w-7"
+              />
+              <span for="sms" class="text-xl font-normal">Messages</span>
+            </a>
+            <a class="flex items-center gap-4 cursor-pointer">
+              <img
+                loading="lazy"
+                src="./assets/icons/note-add.svg"
+                alt="bookmark"
+                class="w-7"
+              />
+              <span for="bookmark" class="text-xl font-normal">Bookmarks</span>
+            </a>
+            <a class="flex items-center gap-4 cursor-pointer">
+              <img
+                loading="lazy"
+                src="./assets/icons/crown-white.svg"
+                alt="crown-white"
+                class="w-7"
+              />
+              <span for="communities" class="text-xl font-normal"
+                >Communities</span
+              >
+            </a>
+            <a
+              href="./profile.html"
+              class="flex items-center gap-4 cursor-pointer"
+            >
+              <img
+                loading="lazy"
+                src="./assets/icons/profile-circle.svg"
+                alt="profile-circle"
+                class="w-7"
+              />
+              <span for="Profile" class="text-xl font-bold">Profile</span>
+            </a>
+            <a
+              href="./signin.html"
+              class="flex items-center gap-4 cursor-pointer"
+            >
+              <img
+                loading="lazy"
+                src="./assets/icons/signout.svg"
+                alt="signout"
+                class="w-7"
+              />
+              <span for="signout" class="text-xl font-normal">Sign Out</span>
+            </a>
+            <button class="w-full rounded-[50px] font-bold bg-blue py-3">
+              New Tweet
+            </button>
+          </div>
+        </aside>
+      </div>
+      <main class="w-full flex gap-7">
+        <!-- Main Content -->
+        <div class="w-full border-x-[1px] border-grey relative">
+          <div class="space-y-5">
+            <div class="relative">
+              <!-- Profile Content -->
+              <img
+                src="./assets/images/background.png"
+                alt="background"
+                class="w-full h-[200px] object-cover"
+              />
+
+              <div class="px-4 pt-3 pb-4 bg-main">
+                <img
+                  loading="lazy"
+                  src="./assets/images/avatar/logo buildwith angga 1.png"
+                  alt="avatar"
+                  class="absolute left-4 top-[150px] size-28 border-4 border-main shrink-0 object-cover rounded-full"
+                />
+                <div class="mt-16 flex justify-between items-center">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <h2 class="text-xl font-bold">BuildWithAngga</h2>
+                      <img
+                        loading="lazy"
+                        src="./assets/icons/verify.svg"
+                        alt="verified"
+                        class="size-5"
+                      />
+                    </div>
+                    <p class="text-gray-500">@buildwithangga</p>
+                  </div>
+                  <button
+                    class="text-sm text-main font-bold bg-white px-4 py-1.5 rounded-full"
+                  >
+                    Follow
+                  </button>
+                </div>
+
+                <p class="mt-3">
+                  Tempat belajar skills Product Design & Software Development
+                  bersama mentor berpengalaman dengan komunitas yang supportive.
+                </p>
+
+                <div class="flex gap-4 mt-3 text-gray-500">
+                  <span class="flex items-center gap-1">
+                    <img
+                      src="./assets/icons/briefcase.svg"
+                      alt="work"
+                      class="size-4"
+                    />
+                    UX Designer
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <img
+                      src="./assets/icons/location.svg"
+                      alt="location"
+                      class="size-4"
+                    />
+                    Indonesia
+                  </span>
+                </div>
+                <div class="flex gap-4 mt-3 text-gray-500">
+                  <span>
+                    <span class="font-bold text-white">12</span> Following
+                  </span>
+                  <span>
+                    <span class="font-bold text-white">19,744</span> Followers
+                  </span>
+                </div>
+              </div>
+
+              <div
+                class="w-full h-14 bg-main/50 backdrop-blur-sm border-b-[1px] border-grey flex justify-center items-end gap-10 px-7"
+              >
+                <button class="font-bold px-4 py-2 border-b-4 border-blue">
+                  Posts
+                </button>
+                <button class="text-grey px-4 py-2">Replies</button>
+                <button class="text-grey px-4 py-2">Highlights</button>
+                <button class="text-grey px-4 py-2">Media</button>
+                <button class="text-grey px-4 py-2">Likes</button>
+              </div>
+            </div>
+
+            <div class="flex gap-2 px-4 py-5">
+              <img
+                loading="lazy"
+                src="./assets/images/avatar/logo buildwith angga 1.png"
+                alt="avatar"
+                class="size-12 shrink-0 object-cover rounded-full"
+              />
+
+              <div class="w-full space-y-2">
+                <div class="flex justify-between items-center w-full">
+                  <div>
+                    <a href="./profile.html" class="flex items-center gap-1">
+                      <h3 class="font-bold">BuildWithAngga</h3>
+                      <img
+                        loading="lazy"
+                        src="./assets/icons/verify.svg"
+                        alt="verified"
+                        class="size-4"
+                      />
+                    </a>
+                    <span class="text-grey text-sm">
+                      @bwa &bull; 24 Oct 2024
+                    </span>
+                  </div>
+                  <span
+                    class="border border-grey rounded-full py-1.5 px-3 text-sm font-semibold"
+                  >
+                    🤩 Happy
+                  </span>
+                </div>
+                <p>
+                  Halo semuanya, dalam merayakan ulang tahun BuildWithAngga ke-4
+                  maka kami telah merilis 6 kelas gratis terbaru untuk
+                  dipelajari tahun ini.
+                </p>
+
+                <div class="flex items-center gap-2">
+                  <button class="flex items-center gap-1 text-sm text-red">
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/heart.svg"
+                      alt="heart"
+                      class="w-4 shrink-0"
+                    />
+                    22 Likes
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <hr class="border-grey" />
+
+            <div class="flex gap-2 px-4 py-5">
+              <img
+                loading="lazy"
+                src="./assets/images/avatar/logo buildwith angga 1.png"
+                alt="avatar"
+                class="size-12 shrink-0 object-cover rounded-full"
+              />
+
+              <div class="w-full space-y-2">
+                <div class="flex justify-between items-center w-full">
+                  <div>
+                    <a href="./profile.html" class="flex items-center gap-1">
+                      <h3 class="font-bold">BuildWithAngga</h3>
+                      <img
+                        loading="lazy"
+                        src="./assets/icons/verify.svg"
+                        alt="verified"
+                        class="size-4"
+                      />
+                    </a>
+                    <span class="text-grey text-sm">
+                      @bwa &bull; 24 Oct 2024
+                    </span>
+                  </div>
+                  <span
+                    class="border border-grey rounded-full py-1.5 px-3 text-sm font-semibold"
+                  >
+                    🤩 Happy
+                  </span>
+                </div>
+                <p>
+                  Tidak pernah berhenti membangun karir impian Anda bersama
+                  dengan para mentor expert kami.
+                </p>
+
+                <div class="flex items-center gap-2">
+                  <button class="flex items-center gap-1 text-sm text-grey">
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/heart-outline.svg"
+                      alt="heart"
+                      class="w-4 shrink-0"
+                    />
+                    19K Likes
+                  </button>
+                  <button class="flex items-center gap-1 text-sm text-grey">
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/trash.svg"
+                      alt="trash.svg"
+                      class="w-4 shrink-0"
+                    />
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <hr class="border-grey" />
+
+            <div class="flex gap-2 px-4 py-5">
+              <img
+                loading="lazy"
+                src="./assets/images/avatar/logo buildwith angga 1.png"
+                alt="avatar"
+                class="size-12 shrink-0 object-cover rounded-full"
+              />
+
+              <div class="w-full space-y-2">
+                <div class="flex justify-between items-center w-full">
+                  <div>
+                    <a href="./profile.html" class="flex items-center gap-1">
+                      <h3 class="font-bold">BuildWithAngga</h3>
+                      <img
+                        loading="lazy"
+                        src="./assets/icons/verify.svg"
+                        alt="verified"
+                        class="size-4"
+                      />
+                    </a>
+                    <span class="text-grey text-sm">
+                      @bwa &bull; 24 Oct 2024
+                    </span>
+                  </div>
+                  <span
+                    class="border border-grey rounded-full py-1.5 px-3 text-sm font-semibold"
+                  >
+                    🤩 Happy
+                  </span>
+                </div>
+                <p>
+                  Tidak pernah berhenti membangun karir impian Anda bersama
+                  dengan para mentor expert kami.
+                </p>
+
+                <div class="flex items-center gap-2">
+                  <button class="flex items-center gap-1 text-sm text-grey">
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/heart-outline.svg"
+                      alt="heart"
+                      class="w-4 shrink-0"
+                    />
+                    19K Likes
+                  </button>
+                  <button class="flex items-center gap-1 text-sm text-grey">
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/trash.svg"
+                      alt="trash.svg"
+                      class="w-4 shrink-0"
+                    />
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <hr class="border-grey" />
+
+            <div class="flex gap-2 px-4 py-5">
+              <img
+                loading="lazy"
+                src="./assets/images/avatar/logo buildwith angga 1.png"
+                alt="avatar"
+                class="size-12 shrink-0 object-cover rounded-full"
+              />
+
+              <div class="w-full space-y-2">
+                <div class="flex justify-between items-center w-full">
+                  <div>
+                    <a href="./profile.html" class="flex items-center gap-1">
+                      <h3 class="font-bold">BuildWithAngga</h3>
+                      <img
+                        loading="lazy"
+                        src="./assets/icons/verify.svg"
+                        alt="verified"
+                        class="size-4"
+                      />
+                    </a>
+                    <span class="text-grey text-sm">
+                      @bwa &bull; 24 Oct 2024
+                    </span>
+                  </div>
+                  <span
+                    class="border border-grey rounded-full py-1.5 px-3 text-sm font-semibold"
+                  >
+                    😔 Sad
+                  </span>
+                </div>
+                <p>Javascript susah juga buat pemula</p>
+
+                <div class="flex items-center gap-2">
+                  <button class="flex items-center gap-1 text-sm text-grey">
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/heart-outline.svg"
+                      alt="heart"
+                      class="w-4 shrink-0"
+                    />
+                    19K Likes
+                  </button>
+                  <button class="flex items-center gap-1 text-sm text-grey">
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/trash.svg"
+                      alt="trash.svg"
+                      class="w-4 shrink-0"
+                    />
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <hr class="border-grey" />
+            <div class="flex gap-2 px-4 py-5">
+              <img
+                loading="lazy"
+                src="./assets/images/avatar/logo buildwith angga 1.png"
+                alt="avatar"
+                class="size-12 shrink-0 object-cover rounded-full"
+              />
+
+              <div class="w-full space-y-2">
+                <div class="flex justify-between items-center w-full">
+                  <div>
+                    <a href="./profile.html" class="flex items-center gap-1">
+                      <h3 class="font-bold">BuildWithAngga</h3>
+                      <img
+                        loading="lazy"
+                        src="./assets/icons/verify.svg"
+                        alt="verified"
+                        class="size-4"
+                      />
+                    </a>
+                    <span class="text-grey text-sm">
+                      @bwa &bull; 24 Oct 2024
+                    </span>
+                  </div>
+                  <span
+                    class="border border-grey rounded-full py-1.5 px-3 text-sm font-semibold"
+                  >
+                    😮 Shocked
+                  </span>
+                </div>
+                <p>Besok libur, bisa upgrade skills engineering!!!</p>
+
+                <div class="flex items-center gap-2">
+                  <button class="flex items-center gap-1 text-sm text-grey">
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/heart-outline.svg"
+                      alt="heart"
+                      class="w-4 shrink-0"
+                    />
+                    1K Likes
+                  </button>
+                  <button class="flex items-center gap-1 text-sm text-grey">
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/trash.svg"
+                      alt="trash.svg"
+                      class="w-4 shrink-0"
+                    />
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <hr class="border-grey" />
+          </div>
+        </div>
+        <!-- Right Content -->
+        <div class="hidden md:block w-[300px] shrink-0 space-y-5">
+          <form class="mt-5">
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="Search"
+              class="bg-secondary w-full py-3 pl-14 pr-4 outline-none rounded-[50px] focus:ring-1 focus:ring-blue focus:border-transparent placeholder:text-grey"
+              style="
+                background-image: url('./assets/icons/search.svg');
+                background-repeat: no-repeat;
+                background-position: 16px 10px;
+              "
+            />
+          </form>
+
+          <div class="bg-secondary w-full py-3.5 rounded-[18px] space-y-5">
+            <h3 class="font-bold text-lg px-3.5">You might like</h3>
+
+            <div
+              class="flex gap-2 items-center justify-between px-3.5 py-1 hover:bg-grey/10 transition-all"
+            >
+              <a href="./profile.html" class="flex gap-2">
+                <img
+                  loading="lazy"
+                  src="./assets/images/avatar/image 7.png"
+                  alt="avatar"
+                  class="size-10 shrink-0 object-cover rounded-full"
+                />
+                <div>
+                  <div class="flex items-center gap-1">
+                    <h3 class="font-bold">Shayna</h3>
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/verify.svg"
+                      alt="verified"
+                      class="size-4"
+                    />
+                  </div>
+                  <span class="text-grey text-sm"> @shayna </span>
+                </div>
+              </a>
+
+              <button
+                class="text-sm text-main font-bold bg-white px-4 py-1.5 rounded-full"
+              >
+                Follow
+              </button>
+            </div>
+            <div
+              class="flex gap-2 items-center justify-between px-3.5 py-1 hover:bg-grey/10 transition-all"
+            >
+              <a href="./profile.html" class="flex gap-2">
+                <img
+                  loading="lazy"
+                  src="./assets/images/avatar/image 8.png"
+                  alt="avatar"
+                  class="size-10 shrink-0 object-cover rounded-full"
+                />
+                <div>
+                  <div class="flex items-center gap-1">
+                    <h3 class="font-bold">Tomohiro</h3>
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/verify.svg"
+                      alt="verified"
+                      class="size-4"
+                    />
+                  </div>
+                  <span class="text-grey text-sm"> @tomohiro </span>
+                </div>
+              </a>
+
+              <button
+                class="text-sm text-main font-bold bg-white px-4 py-1.5 rounded-full"
+              >
+                Follow
+              </button>
+            </div>
+            <div
+              class="flex gap-2 items-center justify-between px-3.5 py-1 hover:bg-grey/10 transition-all"
+            >
+              <a href="./profile.html" class="flex gap-2">
+                <img
+                  loading="lazy"
+                  src="./assets/images/avatar/image 9.png"
+                  alt="avatar"
+                  class="size-10 shrink-0 object-cover rounded-full"
+                />
+                <div>
+                  <div class="flex items-center gap-1">
+                    <h3 class="font-bold">Miyu</h3>
+                    <img
+                      loading="lazy"
+                      src="./assets/icons/verify.svg"
+                      alt="verified"
+                      class="size-4"
+                    />
+                  </div>
+                  <span class="text-grey text-sm"> @miyu </span>
+                </div>
+              </a>
+
+              <button
+                class="text-sm text-main font-bold bg-white px-4 py-1.5 rounded-full"
+              >
+                Follow
+              </button>
+            </div>
+
+            <a href="" class="text-blue mt-5 block px-3.5"> Show more </a>
+          </div>
+
+          <div class="bg-secondary w-full py-3.5 rounded-[18px] space-y-5">
+            <h3 class="font-bold text-lg px-3.5">Trending</h3>
+            <a class="block hover:bg-grey/10 px-3.5 py-1 transition-all">
+              <span class="text-sm text-grey"> 1 &bull; Trending </span>
+              <h4 class="font-bold">Belajar Javascript</h4>
+              <span class="text-sm text-grey"> 12K posts </span>
+            </a>
+            <a class="block hover:bg-grey/10 px-3.5 py-1 transition-all">
+              <span class="text-sm text-grey"> 1 &bull; Trending </span>
+              <h4 class="font-bold">Belajar Javascript</h4>
+              <span class="text-sm text-grey"> 12K posts </span>
+            </a>
+            <a class="block hover:bg-grey/10 px-3.5 py-1 transition-all">
+              <span class="text-sm text-grey"> 2 &bull; Teknologi </span>
+              <h4 class="font-bold">AI dalam Sehari-hari</h4>
+              <span class="text-sm text-grey"> 8.5K posts </span>
+            </a>
+            <a class="block hover:bg-grey/10 px-3.5 py-1 transition-all">
+              <span class="text-sm text-grey"> 3 &bull; Olahraga </span>
+              <h4 class="font-bold">Piala Dunia 2026</h4>
+              <span class="text-sm text-grey"> 15K posts </span>
+            </a>
+            <a class="block hover:bg-grey/10 px-3.5 py-1 transition-all">
+              <span class="text-sm text-grey"> 4 &bull; Hiburan </span>
+              <h4 class="font-bold">Film Terbaru Marvel</h4>
+              <span class="text-sm text-grey"> 10K posts </span>
+            </a>
+            <a href="" class="text-blue mt-5 block px-3.5"> Show more </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
